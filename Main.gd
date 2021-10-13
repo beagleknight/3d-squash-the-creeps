@@ -13,5 +13,5 @@ func _on_MobTimer_timeout():
 	
 	var player_position = $Player.transform.origin
 	
-	add_child(mob)
+	add_child(mob) # This adds the mob to the scene
 	mob.initialize(mob_spawn_location.translation, player_position)
